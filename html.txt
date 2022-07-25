@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Wallet</title>
+</head>
+<body>
+    <div class="app">
+       <!-- <form onsubmit="createAccount"> -->
+        <p>Register a user</p>
+        <input type="text" id="name" placeholder="enter user's name" />
+
+        <button onclick="createAccount()" id="accountButton">create user</button>
+        <p id="resultAccountCreation"></p>
+       <!-- </form> -->
+
+       <p>user's balance</p>
+       <input type="number" id="user" placeholder="enter user's id" />
+       <button  onclick="readBalance()" id="userButton">Get Balance</button>
+       <p id="resultBalance"></p>
+
+       <!-- <form> -->
+        <p>send money</p>
+        <input type="number" id="from" placeholder="enter sender id" />
+        <input type="number" id="to" placeholder="enter recepient id" />
+        <input type="number" id="amount" placeholder="enter amount" />
+        <button  onclick="transferMoney()" id="transferButton">Transfer Money</button>
+        <p id="resultTransferMoney"></p>
+       <!-- </form> -->
+    </div>
+<script  src="./Ewallet.js" />
+</body>
+</html>
